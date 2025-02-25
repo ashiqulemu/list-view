@@ -1,0 +1,114 @@
+.my-0 {
+  margin: 0;
+}
+
+body {
+  background: #DFDFDF;
+}
+
+.tickets_container .tickets {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 1px 12px 0px rgba(128, 128, 128, 0.2196078431);
+  transition: all 0.3s ease-in-out;
+}
+.tickets_container .tickets:hover {
+  transform: scale(1.02);
+  background: #feffe4;
+  border-color: #000;
+}
+.tickets_container .tickets:nth-child(odd) {
+  background: #f7f7f7;
+}
+.tickets_container .tickets:nth-child(odd):hover {
+  background: #feffe4;
+}
+@media (max-width: 768px) {
+  .tickets_container .tickets {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+.tickets_container .tickets .items {
+  flex: 2;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+.tickets_container .tickets .items:first-child {
+  order: 1;
+  max-width: 210px;
+}
+.tickets_container .tickets .items:nth-child(2) {
+  flex: 3;
+  order: 3;
+}
+.tickets_container .tickets .items:nth-child(2) h3 {
+  font-size: 21px;
+}
+.tickets_container .tickets .items:nth-child(3) {
+  order: 2;
+  max-width: 270px;
+}
+.tickets_container .tickets .items:nth-child(3) h3 span {
+  font-size: 21px !important;
+}
+.tickets_container .tickets .items:last-child {
+  flex: 1;
+  justify-content: end;
+  order: 4;
+}
+
+.date {
+  margin: 0;
+  line-height: 1.3;
+  font-weight: bolder;
+  font-family: "roboto";
+  text-transform: uppercase;
+  font-size: 2.1rem !important;
+  margin-bottom: 0;
+}
+
+.btn-theme {
+  border-radius: 6px;
+  background: #ff2800;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  padding: 3px 7px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.8rem;
+  border: 2px solid #000;
+  text-decoration: none;
+}
+.btn-theme:hover {
+  background: #000;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .items h3.date {
+    font-size: 20px !important;
+  }
+  .items h3 {
+    font-size: 20px !important;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 768px) {
+  .items h3 {
+    text-align: center;
+  }
+  .items .btn-theme {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=app.css.map */
