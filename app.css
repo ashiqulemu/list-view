@@ -1,12 +1,27 @@
-.my-0 {
-  margin: 0;
+.tour-section {
+  background-color: #DFDFDF;
+  padding: 50px 0;
 }
-
-body {
-  background: #DFDFDF;
+.tour-section .container {
+  max-width: 1170px;
 }
-
-.tickets_container .tickets {
+.tour-section .container .tour-title {
+  text-shadow: 2px 2px 2px rgba(37, 31, 31, 0.8);
+  text-align: center;
+  color: #212121;
+  font-size: 3.5em;
+  font-weight: 700;
+  margin: 0 auto;
+  text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -webkit-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -moz-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -o-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -ms-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  letter-spacing: 1px;
+  position: relative;
+  margin-bottom: 45px;
+}
+.tour-section .container .tickets_container .tickets {
   display: flex;
   flex-wrap: wrap;
   border: 2px solid #ffffff;
@@ -14,51 +29,56 @@ body {
   margin: 10px 0;
   box-shadow: 0px 1px 12px 0px rgba(128, 128, 128, 0.2196078431);
   transition: all 0.3s ease-in-out;
+  font-family: sans-serif;
 }
-.tickets_container .tickets:hover {
+.tour-section .container .tickets_container .tickets:hover {
   transform: scale(1.02);
   background: #feffe4;
   border-color: #000;
 }
-.tickets_container .tickets:nth-child(odd) {
+.tour-section .container .tickets_container .tickets:nth-child(odd) {
   background: #f7f7f7;
 }
-.tickets_container .tickets:nth-child(odd):hover {
+.tour-section .container .tickets_container .tickets:nth-child(odd):hover {
   background: #feffe4;
 }
 @media (max-width: 768px) {
-  .tickets_container .tickets {
+  .tour-section .container .tickets_container .tickets {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
   }
 }
-.tickets_container .tickets .items {
+.tour-section .container .tickets_container .tickets .items {
   flex: 2;
   padding: 8px;
   display: flex;
   align-items: center;
 }
-.tickets_container .tickets .items:first-child {
+.tour-section .container .tickets_container .tickets .items h3 {
+  font-size: 24px;
+}
+.tour-section .container .tickets_container .tickets .items:first-child {
   order: 1;
   max-width: 210px;
 }
-.tickets_container .tickets .items:nth-child(2) {
+.tour-section .container .tickets_container .tickets .items:nth-child(2) {
   flex: 3;
   order: 3;
 }
-.tickets_container .tickets .items:nth-child(2) h3 {
+.tour-section .container .tickets_container .tickets .items:nth-child(2) h3 {
   font-size: 21px;
+  margin: 0;
 }
-.tickets_container .tickets .items:nth-child(3) {
+.tour-section .container .tickets_container .tickets .items:nth-child(3) {
   order: 2;
   max-width: 270px;
 }
-.tickets_container .tickets .items:nth-child(3) h3 span {
+.tour-section .container .tickets_container .tickets .items:nth-child(3) h3 span {
   font-size: 21px !important;
 }
-.tickets_container .tickets .items:last-child {
+.tour-section .container .tickets_container .tickets .items:last-child {
   flex: 1;
   justify-content: end;
   order: 4;

@@ -1,99 +1,123 @@
-.my-0 {
-   margin: 0;
-}
+.tour-section {
+   background-color: #DFDFDF;
+   padding: 50px 0;
 
+   .container {
+      max-width: 1170px;
 
-body{
-   background: #DFDFDF;
-}
-
-.tickets_container {
-
-   .tickets {
-      display: flex;
-      flex-wrap: wrap;
-      border: 2px solid #ffffff;
-      border-radius: 10px;
-      margin: 10px 0;
-      box-shadow: 0px 1px 12px 0px #80808038;
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-         transform: scale(1.02);
-         background: #feffe4;
-         border-color: #000;
+      .tour-title {
+         text-shadow: 2px 2px 2px rgba(37, 31, 31, 0.8);
+         text-align: center;
+         color: #212121;
+         font-size: 3.5em;
+         font-weight: 700;
+         margin: 0 auto;
+         text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+         -webkit-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+         -moz-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+         -o-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+         -ms-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+         letter-spacing: 1px;
+         position: relative;
+         margin-bottom: 45px;
       }
 
-      &:nth-child(odd) {
-         background: #f7f7f7;
+      .tickets_container {
 
-         // background: linear-gradient(45deg, #ff0404, #7645a6);
-         // .items{
-         //    color: #fff;
-         //    .text-muted{
-         //       color: #fff;
-         //    }
-         // }
-         &:hover {
-            background: #feffe4;
+         .tickets {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0px 1px 12px 0px #80808038;
+            transition: all 0.3s ease-in-out;
+            font-family: sans-serif;
 
-         }
-      }
-
-      @media(max-width:768px) {
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         padding: 10px;
-      }
-
-      .items {
-         flex: 2;
-         padding: 8px;
-         display: flex;
-         align-items: center;
-
-
-         &:first-child {
-            // flex: 2; 
-            order: 1;
-            max-width: 210px;
-         }
-
-         &:nth-child(2) {
-            flex: 3;
-            order: 3;
-
-            h3 {
-               font-size: 21px;
+            &:hover {
+               transform: scale(1.02);
+               background: #feffe4;
+               border-color: #000;
             }
-         }
 
-         &:nth-child(3) {
-            // flex: 2; 
-            order: 2;
-            max-width: 270px;
+            &:nth-child(odd) {
+               background: #f7f7f7;
 
-            h3 {
-               span {
-                  font-size: 21px !important;
+               // background: linear-gradient(45deg, #ff0404, #7645a6);
+               // .items{
+               //    color: #fff;
+               //    .text-muted{
+               //       color: #fff;
+               //    }
+               // }
+               &:hover {
+                  background: #feffe4;
+
                }
             }
+
+            @media(max-width:768px) {
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               padding: 10px;
+            }
+
+            .items {
+               flex: 2;
+               padding: 8px;
+               display: flex;
+               align-items: center;
+
+               h3 {
+                  font-size: 24px;
+               }
+
+               &:first-child {
+                  // flex: 2; 
+                  order: 1;
+                  max-width: 210px;
+               }
+
+               &:nth-child(2) {
+                  flex: 3;
+                  order: 3;
+
+                  h3 {
+                     font-size: 21px;
+                     margin: 0;
+                  }
+               }
+
+               &:nth-child(3) {
+                  // flex: 2; 
+                  order: 2;
+                  max-width: 270px;
+
+                  h3 {
+                     span {
+                        font-size: 21px !important;
+                     }
+                  }
+               }
+
+               &:last-child {
+                  flex: 1;
+                  justify-content: end;
+                  order: 4;
+               }
+
+
+
+
+
+            }
          }
-
-         &:last-child {
-            flex: 1;
-            justify-content: end;
-            order: 4;
-         }
-
-
-
-
-
       }
    }
 }
+
+
 
 
 
